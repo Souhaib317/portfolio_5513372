@@ -1,16 +1,35 @@
-# portfolio_5513372
+# Portfolio App
 
-A new Flutter project.
+Dies ist mein Portfolio-Projekt, das mit Flutter entwickelt wurde. Diese App zeigt eine einfache Startseite und ist der erste Schritt in meinem Portfolio, das in Flutter erstellt wird.
 
-## Getting Started
+## Flutter Version
+Verwendete Flutter-Version: 3.0.0 (oder die Version, die du verwendest)
 
-This project is a starting point for a Flutter application.
+## Projekt starten
+Um das Projekt lokal auszuführen, folge diesen Schritten:
 
-A few resources to get you started if this is your first Flutter project:
+1. Klone das Repository:
+    ```
+    git clone https://github.com/Souhaib317/portfolio_5513372.git
+    ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. Installiere die Abhängigkeiten:
+    ```
+    flutter pub get
+    ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. Starte die App:
+    ```
+    flutter run
+    ```
+
+## Git-Branching-Strategie
+- Der Haupt-Branch ist `main`.
+- Für neue Features oder Seiten erstelle einen neuen Branch im Format `feature/<feature-name>`.
+    - Beispiel: `feature/startseite` für die Implementierung der Startseite.
+- Nachdem die Änderungen im `feature/<feature-name>`-Branch abgeschlossen sind, wird dieser in den `main`-Branch gemergt.
+
+## Weitere Informationen
+- [Flutter-Installation und Konfiguration](https://flutter.dev/docs/get-started/install)
+- [Flutter-Dokumentation](https://flutter.dev/docs)
+- 
