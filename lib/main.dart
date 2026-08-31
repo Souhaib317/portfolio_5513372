@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter/material.dart';
-import 'pages/home_page.dart';  // Stelle sicher, dass dieser Import korrekt ist.
+import 'pages/home_page.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Portfolio',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: HomePage(), // Hier wird die HomePage angezeigt.
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: const HomePage(),
     );
   }
 }
