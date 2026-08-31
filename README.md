@@ -1,35 +1,73 @@
 # Portfolio App
 
-Dies ist mein Portfolio-Projekt, das mit Flutter entwickelt wurde. Diese App zeigt eine einfache Startseite und ist der erste Schritt in meinem Portfolio, das in Flutter erstellt wird.
+Eine plattformübergreifende Portfolio-Anwendung auf Basis von Flutter. Das
+Projekt befindet sich in einer frühen Entwicklungsphase. Der aktuelle Stand
+enthält eine erste Startseite; weitere Portfolio-Bereiche werden schrittweise
+ergänzt.
 
-## Flutter Version
-Verwendete Flutter-Version: 3.0.0 (oder die Version, die du verwendest)
+## Aktueller Funktionsumfang
 
-## Projekt starten
-Um das Projekt lokal auszuführen, folge diesen Schritten:
+- Flutter-Anwendung für Web, Android, iOS, Windows, macOS und Linux
+- einfache Portfolio-Startseite
+- Material-Design-Grundlage
+- statische Codeanalyse mit `flutter_lints`
+- Widget-Test für die Startseite
 
-1. Klone das Repository:
-    ```
-    git clone https://github.com/Souhaib317/portfolio_5513372.git
-    ```
+## Entwicklungsumgebung
 
-2. Installiere die Abhängigkeiten:
-    ```
-    flutter pub get
-    ```
+Der aktuelle Stand wurde mit folgenden Versionen geprüft:
 
-3. Starte die App:
-    ```
-    flutter run
-    ```
+- Flutter 3.38.7 (Stable)
+- Dart 3.10.7
 
-## Git-Branching-Strategie
-- Der Haupt-Branch ist `main`.
-- Für neue Features oder Seiten erstelle einen neuen Branch im Format `feature/<feature-name>`.
-    - Beispiel: `feature/startseite` für die Implementierung der Startseite.
-- Nachdem die Änderungen im `feature/<feature-name>`-Branch abgeschlossen sind, wird dieser in den `main`-Branch gemergt.
+Das Projekt selbst verlangt gemäß `pubspec.yaml` mindestens Dart 3.8.0.
 
-## Weitere Informationen
-- [Flutter-Installation und Konfiguration](https://flutter.dev/docs/get-started/install)
-- [Flutter-Dokumentation](https://flutter.dev/docs)
-- 
+## Projekt lokal starten
+
+Voraussetzung ist eine installierte
+[Flutter-Entwicklungsumgebung](https://docs.flutter.dev/install).
+
+```bash
+git clone --branch main https://github.com/Souhaib317/portfolio_5513372.git
+cd portfolio_5513372
+flutter pub get
+flutter run
+```
+
+Für die Web-Version kann gezielt Chrome verwendet werden:
+
+```bash
+flutter run -d chrome
+```
+
+## Qualitätsprüfungen
+
+```bash
+dart format --output=none --set-exit-if-changed .
+flutter analyze
+flutter test
+flutter build web
+```
+
+## Branching-Strategie
+
+- `main` enthält den freigegebenen Projektstand.
+- Neue Funktionen werden in `feature/<name>` entwickelt.
+- Fehlerkorrekturen werden in `fix/<name>` entwickelt.
+- Technische Wartung erfolgt in `chore/<name>`.
+- Änderungen werden per Pull Request geprüft und danach in `main` gemergt.
+
+## Geplante Erweiterungen
+
+- responsive Navigation
+- persönlicher Hero- und Über-mich-Bereich
+- Fähigkeiten und Technologien
+- Projektübersicht und Projektdetails
+- Kontaktbereich
+- automatisierte GitHub-Prüfungen und Web-Deployment
+
+## Weiterführende Informationen
+
+- [Flutter-Dokumentation](https://docs.flutter.dev/)
+- [Flutter-Tests](https://docs.flutter.dev/testing/overview)
+- [Dart-Linter-Regeln](https://dart.dev/tools/linter-rules)
