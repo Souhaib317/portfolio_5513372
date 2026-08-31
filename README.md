@@ -1,5 +1,7 @@
 # Portfolio App
 
+[![Flutter CI](https://github.com/Souhaib317/portfolio_5513372/actions/workflows/flutter_ci.yml/badge.svg?branch=main)](https://github.com/Souhaib317/portfolio_5513372/actions/workflows/flutter_ci.yml)
+
 Eine plattformübergreifende Portfolio-Anwendung auf Basis von Flutter. Das
 Projekt befindet sich in einer frühen Entwicklungsphase. Der aktuelle Stand
 enthält eine erste Startseite; weitere Portfolio-Bereiche werden schrittweise
@@ -41,6 +43,10 @@ flutter run -d chrome
 ```
 
 ## Qualitätsprüfungen
+
+GitHub Actions führt diese Prüfungen bei Pull Requests und Änderungen an
+`main` automatisch aus. Lokal können sie mit denselben Befehlen gestartet
+werden:
 
 ```bash
 dart format --output=none --set-exit-if-changed .
